@@ -1,0 +1,30 @@
+:root{
+    --sor: 0;
+}
+
+#tabla{
+    width: calc(50px * var(--sor));
+    height: calc(50px * var(--sor));
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(var(--sor), 1fr);
+    grid-template-rows: repeat(var(--sor), 1fr);
+    cursor: pointer;
+    user-select: none;
+    grid-gap:3px;
+}
+
+#tabla > *{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: 2px solid black;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
